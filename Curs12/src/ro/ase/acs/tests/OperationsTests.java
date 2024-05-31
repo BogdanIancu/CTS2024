@@ -2,7 +2,9 @@ package ro.ase.acs.tests;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import ro.ase.acs.classes.Operations;
+import ro.ase.acs.tests.categories.ImportantTest;
 
 import static org.junit.Assert.*;
 
@@ -15,6 +17,7 @@ public class OperationsTests {
     }
 
     @Test
+    @Category(ImportantTest.class)
     public void whenValidValuesThenCorrectSum() {
         //Arrange
         Operations operations = new Operations();
